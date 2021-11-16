@@ -21,7 +21,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls -la'
-                sh "./gradlew clean build"
+                sh "./gradlew build"
             }
         }
         
