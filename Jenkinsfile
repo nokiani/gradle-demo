@@ -25,5 +25,15 @@ pipeline {
             }
         }
         
+        stage ('Docker Build') {
+            agent {
+                dockerfile {
+                    filename 'Dockerfile.only-package'
+                }
+            }
+            steps {
+                echo 'Docker building...'
+            }
+        
     }
 }
